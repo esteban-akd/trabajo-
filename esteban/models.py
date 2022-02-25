@@ -1,26 +1,26 @@
-from django.db import models
+de  Django . modelos de  importación  de base de datos
 
-# Create your models here.
-class Persona(models.Model):
-    id = models.AutoField(primary_key=True)
-    nombre = models.CharField(max_length=60)
-    apellido = models.CharField(max_length=100)
-    dni=models.CharField(max_length=8)
-    fecha=models.DateField(auto_now=True)
-    club = models.CharField(max_length=50)
-    foto = models.ImageField(
-        upload_to = 'foto/%Y/%m/%d',
-        blank = True,
-        verbose_name = ('Foto de la persona')
+# Crea tus modelos aquí.
+clase  Persona ( modelos . Modelo ):
+    id  =  modelos . AutoField ( primary_key = True )
+    nombre  =  modelos . CharField ( max_length = 60 )
+    apellido  =  modelos . CharField ( max_length = 100 )
+    dni = modelos . CharField ( max_length = 8 )
+    fecha = modelos . Campo de fecha ( auto_ahora = Verdadero )
+    club  =  modelos . CharField ( max_length = 50 )
+    foto  =  modelos . campo de imagen (
+        upload_to  =  'foto/%Y/%m/%d' ,
+        en blanco  =  Verdadero ,
+        verbose_name  = ( 'Foto de la persona' )
     )
   
     
 
-class Meta:
-    verbose_name = ('Persona')
-    verbose_name_plural = ('Persona')
+ metaclase : _
+    verbose_name  = ( 'Persona' )
+    verbose_name_plural  = ( 'Persona' )
     
     
 
-def _str_(self):
-    return self.
+def  _str_ ( uno mismo ):
+    devolverse  a uno mismo .
