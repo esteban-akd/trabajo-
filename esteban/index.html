@@ -1,24 +1,24 @@
-<html>
+< html >
 
-<head>
+< cabeza >
 
-</head>
+</ cabeza >
 
-<body>
-    {% for docente in persona_list %}
-    <h2> {{ docente.nombre }} <b>{{ docente.apellido }}</b> </h2>
-    <p> {{ docente.club }} </p>
-    <p> {{ docente.fecha }} </p>
-    <p> {{ docente.dni }} </p>
-    <p> {{ docente.foto}} </p>
-    {% if docente %}
-    {% endif %}
-    <div>
-        {% if docente.foto %}
-        <img src="{{ docente.foto.url }}" alt="{{ docente.nombre }} {{docente.apellido}}">
-        {% endif %}
-    </div>
-    {% endfor %}
-</body>
+< cuerpo >
+    {% para docente en persona_list %}
+    < h2 > {{ docente.nombre }} < b > {{ docente.apellido }} </ b >  </ h2 >
+    < p > {{docente.club }} </ p >
+    < p > {{docente.fecha }} </ p >
+    < p > {{docente.dni }} </ p >
+    < p > {{docente.foto}} </ p >
+    {% si docente%}
+    {% terminara si %}
+    < div >
+        {%if docente.foto%}
+        < img  src =" {{docente.foto.url }} " alt =" {{docente.nombre }} {{docente.apellido}} " >
+        {% terminara si %}
+    </ div >
+    {% endfor%}
+</ cuerpo >
 
-</html>
+</ html >
